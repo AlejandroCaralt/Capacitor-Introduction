@@ -18,6 +18,6 @@ To use Capacitor core in a web app that is not using a build system or bundler/m
   "bundledWebRuntime": true
 }
 ```
-```
+```sh
 npx cap copy web
 ```
