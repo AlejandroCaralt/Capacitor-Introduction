@@ -95,3 +95,16 @@ To run your app, cd into it and use the npm script provided by Capacitor:
 cd electron/
 npm run electron:start
 ```
+
+For getting a package.exe install
+```
+npm install electron-packager -g
+```
+and for build it for Windows
+```
+electron-packager . --platform=win32
+```
+and for MacOs
+```
+electron-packager . --platform=darwin
+```
