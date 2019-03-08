@@ -19,7 +19,7 @@ npx cap init
 ## What can i do with Capacitor?
 Once we are done with the installation we should be able start transforming our web into any platform app.
 
-### WebJS
+### Progressive Web App
 You can use it for a Build System Project or a non Build System Project.
 
 - With Build System:
@@ -39,7 +39,59 @@ To use Capacitor core in a web app that is not using a build system or bundler/m
 npx cap copy web
 ```
 ### Android
+By default, an Android project is created for every Capacitor project. If you are adding Capacitor to an existing project, you can manually add the Android project using
+```
+npx cap add android
+npx cap sync
+```
+The sync command updates dependencies, and copies any web assets to your project. You can also run
+```
+npx cap copy
+```
+To copy web assets only, which is faster if you know you don't need to update native dependencies.
+
+Opening Android Project
+To open the project in Android Studio, run
+```
+npx cap open android
+```
 
 ### IOS
 
+By default, an iOS project is created for every Capacitor project. If you are adding Capacitor to an existing project, you can manually add the iOS project using
+```
+npx cap add ios
+npx cap sync
+```
+The sync command updates dependencies, and copies any web assets to your project. You can also run
+```
+npx cap copy
+```
+To copy web assets only, which is faster if you know you don't need to update native dependencies.
+
+Opening iOS Project
+To open the project in Xcode, run
+```
+npx cap open ios
+```
 ### Electron
+
+After creating a new Capacitor app, add the electron platform:
+```
+npx cap add electron
+```
+This will generate a new Electron project in the electron/ folder in the root of your app.
+
+Preparing your app
+Just like the other Capacitor platforms, the copy command must be run periodically to sync web content with Electron:
+```
+npx cap copy
+```
+Run this after making any modifications to your web app.
+
+Running your App
+To run your app, cd into it and use the npm script provided by Capacitor:
+```
+cd electron/
+npm run electron:start
+```
