@@ -1,6 +1,5 @@
 # Capacitor-Introduction
-
-Capacitor Core is a JavaScript library that runs on all platforms that Capacitor supports, and web is no different.
+Capacitor is a cross-platform app runtime that makes it easy to build web apps that run natively on iOS, Android, Electron, and the web. We call these apps "Native Progressive Web Apps" and they represent the next evolution beyond Hybrid apps.
 
 ## What do i need to use Capacitor?
 Capacitor is made from Ionic Team, but it doesnt need to be an Ionic or Angular project.
@@ -20,6 +19,7 @@ npx cap init
 Once we are done with the installation we should be able start transforming our web into any platform app.
 
 ### Progressive Web App
+Capacitor Core is a JavaScript library that runs on all platforms that Capacitor supports, and web is no different.
 You can use it for a Build System Project or a non Build System Project.
 
 - With Build System:
